@@ -48,7 +48,7 @@ console.log(canDrive("stella",22))// stella  is old enough to drive
 */
 
 //challenge 6:largest number
- function findLargest (a,b,c){
+ /*function findLargest (a,b,c){
     if (a>b && a>b){
         return a
     }
@@ -63,3 +63,24 @@ console.log(canDrive("stella",22))// stella  is old enough to drive
  }
  console.log(findLargest(3,4,5))//5
  console.log(findLargest(5,5,99))//99
+ */
+
+ //challenge 7:BMI Calculator
+
+ function calculateBMI(weight,height){
+   let BMI = weight/(height * height)
+   if (BMI<18.5){
+    return ` Your BMI is ${BMI}-under weight`
+   }
+   else if (BMI>=18.5 && BMI<=24.5)
+   {
+    return ` Your BMI is ${BMI}-normal weight`
+   }
+   else if (BMI>=25 && BMI<=29.9)
+    {
+     return` Your BMI is ${BMI}-over weight`
+    }
+    else
+      return ` Your BMI is ${BMI}-obese`
+ }
+ console.log(calculateBMI(68,1.75))
