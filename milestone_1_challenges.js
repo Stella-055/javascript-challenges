@@ -24,7 +24,7 @@ console.log(findPerimeter(6,7));// 26
 
 //Challenge 4:check negative
 
-function isNegative(number){
+/*function isNegative(number){
    if (number<0){
     return true;
 
@@ -34,3 +34,14 @@ function isNegative(number){
 }
 console.log(isNegative(2))//false
 console.log(isNegative(-1))//true
+*/
+//challenge 5:can drive
+function canDrive  (name,age){
+    if (age>=18){
+        return name+ "is old enough to drive "
+    }
+    else
+        return name+ "is not old enough to drive yet"
+};
+
+console.log(canDrive("stella",22))
