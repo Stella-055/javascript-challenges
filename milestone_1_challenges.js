@@ -1,7 +1,22 @@
 //Challenge 1:Return the Sum of Two Numbers
-function addition(num1,num2) {
+
+/*function addition(num1,num2) {
    
     return num1+num2
 }
- console.log(addition(2,3)) // 5
+ addition(4,5)// 9
+ */
  
+//challenge 2: convert minutes to seconds
+/*function convert(minutes) {
+    return minutes*60
+}
+console.log(convert(5));// 300
+*/
+
+//Challenge 3: Perimeter of a Rectangle
+ function findPerimeter(length,width) {
+    let sum = length+width
+    return 2*sum
+}
+console.log(findPerimeter(6,7));// 26
