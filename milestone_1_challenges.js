@@ -127,7 +127,7 @@ console.log(fizzBuzzCheck(15))// FizzBuzz
 
 //challenge 10: Perimeter 2
 
-function  Perimeter(letterl, numbernum){
+/*function  Perimeter(letterl, numbernum){
  switch (letterl){
     case "s":
         return 4*numbernum;
@@ -140,3 +140,16 @@ function  Perimeter(letterl, numbernum){
  }
 }
 console.log(Perimeter("s",5))// 20
+*/
+//challenge 11:  Sum of Even Numbers
+
+function sumEvenNumbers(n){
+    let sum = 0;
+    for (let i = 0; i <= n; i++) {
+        if (i % 2 === 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+console.log(sumEvenNumbers(6))//12
