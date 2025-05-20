@@ -15,8 +15,22 @@ console.log(convert(5));// 300
 */
 
 //Challenge 3: Perimeter of a Rectangle
- function findPerimeter(length,width) {
+ /*function findPerimeter(length,width) {
     let sum = length+width
     return 2*sum
 }
 console.log(findPerimeter(6,7));// 26
+*/
+
+//Challenge 4:check negative
+
+function isNegative(number){
+   if (number<0){
+    return true;
+
+   }
+   else
+   return false
+}
+console.log(isNegative(2))//false
+console.log(isNegative(-1))//true
