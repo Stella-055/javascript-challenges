@@ -107,7 +107,7 @@ console.log(greetUser("stella", 10))//Good Morning, stella!
 */
 //challenge 9:  FizzBuzz
 
-function fizzBuzzCheck(number){
+/*function fizzBuzzCheck(number){
 
     if (number%3==0 && number%5==0){
         return "FizzBuzz"
@@ -123,3 +123,20 @@ function fizzBuzzCheck(number){
 }
 
 console.log(fizzBuzzCheck(15))// FizzBuzz
+*/
+
+//challenge 10: Perimeter 2
+
+function  Perimeter(letterl, numbernum){
+ switch (letterl){
+    case "s":
+        return 4*numbernum;
+        break;
+    case "c":
+        return 2*6.28*numbernum;
+        break;
+    default:
+        return "invalid shape"
+ }
+}
+console.log(Perimeter("s",5))// 20
