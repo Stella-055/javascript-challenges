@@ -36,12 +36,30 @@ console.log(isNegative(2))//false
 console.log(isNegative(-1))//true
 */
 //challenge 5:can drive
-function canDrive  (name,age){
+/*function canDrive  (name,age){
     if (age>=18){
-        return name+ "is old enough to drive "
+        return name+ " is old enough to drive "
     }
     else
-        return name+ "is not old enough to drive yet"
+        return name+ " is not old enough to drive yet"
 };
 
-console.log(canDrive("stella",22))
+console.log(canDrive("stella",22))// stella  is old enough to drive
+*/
+
+//challenge 6:largest number
+ function findLargest (a,b,c){
+    if (a>b && a>b){
+        return a
+    }
+    else if (b>a && b>c){
+        return b
+    }
+    else if (c>a && c>b){
+        return c
+    }
+    else
+       return "they are equal or one is not a number "
+ }
+ console.log(findLargest(3,4,5))//5
+ console.log(findLargest(5,5,99))//99
