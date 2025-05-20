@@ -86,7 +86,7 @@ console.log(canDrive("stella",22))// stella  is old enough to drive
  console.log(calculateBMI(68,1.75))//22.2
  */
 //challenge 8: Greeting Based On Time
-function greetUser(name, hour){
+/*function greetUser(name, hour){
     if (hour>=5 && hour<=11){
         return `Good Morning, ${name}!`
     }
@@ -104,3 +104,22 @@ function greetUser(name, hour){
 }
 
 console.log(greetUser("stella", 10))//Good Morning, stella!
+*/
+//challenge 9:  FizzBuzz
+
+function fizzBuzzCheck(number){
+
+    if (number%3==0 && number%5==0){
+        return "FizzBuzz"
+    }
+    else if (number%3==0){
+        return "Fizz"
+    }
+    else if (number%5==0){
+        return "Buzz"
+    }
+    else
+        return number
+}
+
+console.log(fizzBuzzCheck(15))// FizzBuzz
