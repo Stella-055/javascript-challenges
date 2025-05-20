@@ -67,7 +67,7 @@ console.log(canDrive("stella",22))// stella  is old enough to drive
 
  //challenge 7:BMI Calculator
 
- function calculateBMI(weight,height){
+ /*function calculateBMI(weight,height){
    let BMI = weight/(height * height)
    if (BMI<18.5){
     return ` Your BMI is ${BMI}-under weight`
@@ -83,4 +83,24 @@ console.log(canDrive("stella",22))// stella  is old enough to drive
     else
       return ` Your BMI is ${BMI}-obese`
  }
- console.log(calculateBMI(68,1.75))
+ console.log(calculateBMI(68,1.75))//22.2
+ */
+//challenge 8: Greeting Based On Time
+function greetUser(name, hour){
+    if (hour>=5 && hour<=11){
+        return `Good Morning, ${name}!`
+    }
+    else if (hour>=12 && hour<=17){
+        return `Good Afternoon ${name}!`
+    }
+    else if (hour>=18 && hour<=21){
+        return `Good Evening ${name}!`
+    }
+    else if (hour>=22 && hour<=4){
+        return `Good Night ${name}!`
+    }
+    else
+        return "Invalid hour"
+}
+
+console.log(greetUser("stella", 10))//Good Morning, stella!
