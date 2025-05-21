@@ -156,11 +156,23 @@ console.log(sumEvenNumbers(6))//12 */
 
 //challenge 12:  Multiply by Itself
 
-function powerUp(num, times){
+/*function powerUp(num, times){
     let result=1
+   
     for (let i = 0; i<times; i++) {
          result=num*result;
     }
     return result;
 }
 console.log(powerUp(2,3))//8
+console.log(powerUp(5,0))//1 */
+
+//challenge 13:Factorial Calculator
+function factorial(num){
+    let number=1
+    for (i=1;i<=num;i++){
+        number = number*i;
+    }
+       return number
+}
+console.log(factorial(4))//24
