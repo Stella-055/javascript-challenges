@@ -64,8 +64,18 @@ console.log(findMax([1, 4, 7, 12]))//12 */
  
   //challenge 5:Count Properties
 
-function countProperties(obj){
+/*function countProperties(obj){
  let count= Object.keys(obj).length
  return count
 }
-console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }))//3
+console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }))//3*/
+
+
+//challenge6 :Filter by Length
+
+function filterByLength(arr,minLength){
+ let items =arr.filter(i => i.length>=minLength)
+return items
+}
+
+console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5))// returns: ["giraffe", "hippo", "elephant"]
