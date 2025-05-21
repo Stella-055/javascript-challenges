@@ -199,7 +199,7 @@ console.log(sumMultiples(10, 2))//30
 //challenge 15:Sum of Digits
 function sumDigits(num) {
   let sum = 0;
-  for (i = 0; num != 0; i++) {
+  for ( let i = 0; num != 0; i++) {
     let digit1 = num % 10;
     sum = sum + digit1;
     num = Math.trunc(num / 10);
