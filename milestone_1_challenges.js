@@ -179,7 +179,7 @@ console.log(factorial(4))//24*/
 
 //challenge 14: Multiple Sum
 
-function sumMultiples(n, divisor){
+/*function sumMultiples(n, divisor){
     let sum=0
     for (let i = 1; i <= n; i++) {
         if (i % divisor === 0) {
@@ -190,3 +190,17 @@ function sumMultiples(n, divisor){
 }
  
 console.log(sumMultiples(10, 2))//30
+*/
+//challenge:Sum of Digits
+
+function sumDigits(num){
+    let sum=0
+    for (i=0;num!=0;i++){
+         let digit1= num%10;
+         sum= sum+digit1;
+         num= Math.trunc(num/10);
+        }
+        return sum;
+}
+  console.log(sumDigits(123))//6
+  console.log (sumDigits(4567));  // 22 
