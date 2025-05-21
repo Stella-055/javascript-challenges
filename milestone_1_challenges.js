@@ -206,6 +206,7 @@ console.log(sumMultiples(10, 2))//30
   }
   return sum;
 }
+  
 console.log(sumDigits(123)); //6
 console.log(sumDigits(4567)); // 22
  */
