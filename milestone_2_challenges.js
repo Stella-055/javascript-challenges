@@ -147,9 +147,11 @@ return sum/arr.length
 console.log(average([2, 4, 6, 8])) // returns: 5
 console.log(average([])) // returns: 0 */
 
+
+
 //challenge 11 Linear Search
 
-function linearSearch(arr,val){
+/*function linearSearch(arr,val){
    //return arr.indexOf(val)
    let firstindex=-1;
     for (let i=0;i<arr.length && firstindex==-1;i++){
@@ -162,4 +164,21 @@ function linearSearch(arr,val){
 }
  
 console.log(linearSearch([5, 3, 7, 1,7, 4], 7) ) // returns: 2
-console.log (linearSearch([5, 3, 7, 1, 4], 10) )// returns: -1)
+console.log (linearSearch([5, 3, 7, 1, 4], 10) )// returns: -1) */
+
+
+//challenge 12 :reverse linear search
+
+function reverseLinearSearch(arr,val){
+    //return arr.lastindexOf(val)
+    let lastindex=-1;
+     for (let i=0;i<arr.length;i++){
+         if (arr[i]==val){
+           lastindex=i  
+         }
+ 
+     }
+    return lastindex
+ }
+
+ console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7) ) // returns: 5
