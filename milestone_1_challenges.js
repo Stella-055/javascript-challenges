@@ -208,4 +208,4 @@ console.log(sumMultiples(10, 2))//30
 }
 console.log(sumDigits(123)); //6
 console.log(sumDigits(4567)); // 22
-console.log(sumDigists(0))//  */
+ */
