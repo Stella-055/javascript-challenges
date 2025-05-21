@@ -26,3 +26,21 @@ function findMax(arr){
 
 }
 console.log(findMax([1, 4, 7, 12]))//12
+
+
+// challenge 3: Election winner
+ function findWinner(arr){
+
+    let winner = arr[0];
+    for ( let i=0; i < arr.length; i++){
+        if (arr[i].votes > winner.votes){
+            winner = arr[i];
+        }
+    }
+    return winner;
+ }
+ console.log (findWinner([
+    { name: "Alice", votes: 50 },
+    { name: "Bob", votes: 75 },
+    { name: "Charlie", votes: 65 }
+  ]))//{ name: "Bob", votes: 75 }
