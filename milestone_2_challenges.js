@@ -29,7 +29,7 @@ console.log(findMax([1, 4, 7, 12]))//12 */
 
 
 // challenge 3: Election winner
- function findWinner(arr){
+ /*function findWinner(arr){
 
     let winner = arr[0];
     for ( let i=0; i < arr.length; i++){
@@ -44,3 +44,18 @@ console.log(findMax([1, 4, 7, 12]))//12 */
     { name: "Bob", votes: 75 },
     { name: "Charlie", votes: 65 }
   ]))//{ name: "Bob", votes: 75 }
+  */
+
+  //challenge 4: Longest word
+
+  function findLongestWord(arr){
+    let longest =arr[0]
+    for (let i=0;i<arr.length;i++){
+      if(longest.length<arr[i].length){
+           longest=arr[i]
+      }
+    }
+    return longest
+  }
+
+  console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]))//grapefruit
