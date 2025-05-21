@@ -98,7 +98,7 @@ console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]))// returns: 12 */
 
 //challenge 8:Difference Between Sum of Even and Odd Numbers
 
-function differenceEvenOdd(arr){
+/*function differenceEvenOdd(arr){
     let evenArray =arr.filter( i => i%2===0)
     let oddArray =arr.filter( i => i%2!==0)
     let sumEven=0
@@ -113,4 +113,36 @@ function differenceEvenOdd(arr){
 return  sumEven-sumOdd
 
 }
- console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]))//3
+ console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]))//3 */
+
+
+ //challenge 9 Count Truthy 
+
+/*function countTruthy( obj){
+    let sum =0
+    for (let key in obj) {
+
+      }
+    
+    }
+    console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))*/
+
+
+   
+    //challenge 10 :Average of Numbers
+
+function average(arr){
+let sum =0
+for(let i=0;i<arr.length;i++){
+    sum+=arr[i]
+}
+if(sum==0){
+    return 0
+}
+else
+return sum/arr.length
+  
+}
+  
+console.log(average([2, 4, 6, 8])) // returns: 5
+console.log(average([])) // returns: 0
