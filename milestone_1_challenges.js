@@ -197,7 +197,7 @@ console.log(sumMultiples(10, 2))//30
 */
 
 //challenge 15:Sum of Digits
-function sumDigits(num) {
+/*function sumDigits(num) {
   let sum = 0;
   for ( let i = 0; num != 0; i++) {
     let digit1 = num % 10;
@@ -208,3 +208,4 @@ function sumDigits(num) {
 }
 console.log(sumDigits(123)); //6
 console.log(sumDigits(4567)); // 22
+console.log(sumDigists(0))//  */
