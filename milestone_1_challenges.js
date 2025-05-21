@@ -6,7 +6,7 @@
 }
  addition(4,5)// 9
  */
- 
+
 //challenge 2: convert minutes to seconds
 /*function convert(minutes) {
     return minutes*60
@@ -15,7 +15,7 @@ console.log(convert(5));// 300
 */
 
 //Challenge 3: Perimeter of a Rectangle
- /*function findPerimeter(length,width) {
+/*function findPerimeter(length,width) {
     let sum = length+width
     return 2*sum
 }
@@ -35,6 +35,7 @@ console.log(findPerimeter(6,7));// 26
 console.log(isNegative(2))//false
 console.log(isNegative(-1))//true
 */
+
 //challenge 5:can drive
 /*function canDrive  (name,age){
     if (age>=18){
@@ -48,7 +49,7 @@ console.log(canDrive("stella",22))// stella  is old enough to drive
 */
 
 //challenge 6:largest number
- /*function findLargest (a,b,c){
+/*function findLargest (a,b,c){
     if (a>b && a>b){
         return a
     }
@@ -65,9 +66,9 @@ console.log(canDrive("stella",22))// stella  is old enough to drive
  console.log(findLargest(5,5,99))//99
  */
 
- //challenge 7:BMI Calculator
+//challenge 7:BMI Calculator
 
- /*function calculateBMI(weight,height){
+/*function calculateBMI(weight,height){
    let BMI = weight/(height * height)
    if (BMI<18.5){
     return ` Your BMI is ${BMI}-under weight`
@@ -85,6 +86,7 @@ console.log(canDrive("stella",22))// stella  is old enough to drive
  }
  console.log(calculateBMI(68,1.75))//22.2
  */
+
 //challenge 8: Greeting Based On Time
 /*function greetUser(name, hour){
     if (hour>=5 && hour<=11){
@@ -105,6 +107,7 @@ console.log(canDrive("stella",22))// stella  is old enough to drive
 
 console.log(greetUser("stella", 10))//Good Morning, stella!
 */
+
 //challenge 9:  FizzBuzz
 
 /*function fizzBuzzCheck(number){
@@ -141,6 +144,7 @@ console.log(fizzBuzzCheck(15))// FizzBuzz
 }
 console.log(Perimeter("s",5))// 20
 */
+
 //challenge 11:  Sum of Even Numbers
 
 /*function sumEvenNumbers(n){
@@ -191,16 +195,16 @@ console.log(factorial(4))//24*/
  
 console.log(sumMultiples(10, 2))//30
 */
-//challenge:Sum of Digits
 
-function sumDigits(num){
-    let sum=0
-    for (i=0;num!=0;i++){
-         let digit1= num%10;
-         sum= sum+digit1;
-         num= Math.trunc(num/10);
-        }
-        return sum;
+//challenge 15:Sum of Digits
+function sumDigits(num) {
+  let sum = 0;
+  for (i = 0; num != 0; i++) {
+    let digit1 = num % 10;
+    sum = sum + digit1;
+    num = Math.trunc(num / 10);
+  }
+  return sum;
 }
-  console.log(sumDigits(123))//6
-  console.log (sumDigits(4567));  // 22 
+console.log(sumDigits(123)); //6
+console.log(sumDigits(4567)); // 22
