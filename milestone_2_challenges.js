@@ -48,7 +48,7 @@ console.log(findMax([1, 4, 7, 12]))//12 */
 
   //challenge 4: Longest word
 
-  function findLongestWord(arr){
+  /*function findLongestWord(arr){
     let longest =arr[0]
     for (let i=0;i<arr.length;i++){
       if(longest.length<arr[i].length){
@@ -59,3 +59,13 @@ console.log(findMax([1, 4, 7, 12]))//12 */
   }
 
   console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]))//grapefruit
+  */
+ 
+ 
+  //challenge 5:Count Properties
+
+function countProperties(obj){
+ let count= Object.keys(obj).length
+ return count
+}
+console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }))//3
