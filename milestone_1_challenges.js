@@ -143,13 +143,24 @@ console.log(Perimeter("s",5))// 20
 */
 //challenge 11:  Sum of Even Numbers
 
-function sumEvenNumbers(n){
+/*function sumEvenNumbers(n){
     let sum = 0;
     for (let i = 0; i <= n; i++) {
-        if (i % 2 == 0) {
+        if (i % 2 === 0) {
             sum += i;
         }
     }
     return sum;
 }
-console.log(sumEvenNumbers(6))//12
+console.log(sumEvenNumbers(6))//12 */
+
+//challenge 12:  Multiply by Itself
+
+function powerUp(num, times){
+    let result=1
+    for (let i = 0; i<times; i++) {
+         result=num*result;
+    }
+    return result;
+}
+console.log(powerUp(2,3))//8
