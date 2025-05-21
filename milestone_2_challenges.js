@@ -14,7 +14,7 @@ console.log(sumOfPositives([1, -4, 7, 12]))//20 */
 
 // challenge 2:Find Maximum Value
 
-function findMax(arr){
+/*function findMax(arr){
     let max=arr[0] ;
     for (let i=0; i < arr.length; i++){
         if (arr[i] > max){
@@ -25,7 +25,7 @@ function findMax(arr){
 
 
 }
-console.log(findMax([1, 4, 7, 12]))//12
+console.log(findMax([1, 4, 7, 12]))//12 */
 
 
 // challenge 3: Election winner
