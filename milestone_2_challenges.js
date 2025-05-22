@@ -222,3 +222,16 @@ function reverseLinearSearch(arr,val){
  }
 
  //console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]))// returns: { apple: 3, banana: 2, orange: 1 }
+
+ // challenge 15: Remove Duplicates
+
+ function removeDuplicates(arr){
+    let uniqueArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (!uniqueArray.includes(arr[i])) {
+            uniqueArray.push(arr[i]);
+        }
+    }
+    return uniqueArray;
+}
+//console.log(removeDuplicates([1, 2, 3, 2, 1, 4]))// returns: [1, 2, 3, 4]
