@@ -118,14 +118,16 @@ return  sumEven-sumOdd
 
  //challenge 9 Count Truthy 
 
-/*function countTruthy( obj){
-    let sum =0
-    for (let key in obj) {
-
+function countTruthy( obj){
+    let sum = 0
+    for (key in obj) {
+      if(obj[key]){
+            sum++
+        }
       }
-    
+     return sum
     }
-    console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))*/
+    console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))//2
 
 
 
@@ -187,8 +189,8 @@ console.log (linearSearch([5, 3, 7, 1, 4], 10) )// returns: -1) */
 
  //challenge 13 : linear search  all indices
 
- function linearSearchAll(arr,val){
-    //return arr.lastindexOf(val)
+ /*function linearSearchAll(arr,val){
+   
     let allIndices=[];
      for (let i=0;i<arr.length;i++){
          if (arr[i]==val){
@@ -202,3 +204,10 @@ console.log (linearSearch([5, 3, 7, 1, 4], 10) )// returns: -1) */
  console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7) ) // returns: [2,5]*/
 
 
+ 
+ // challenge 14:Count Occurrences
+
+ //function countOccurrences(arr){
+
+
+ //}
