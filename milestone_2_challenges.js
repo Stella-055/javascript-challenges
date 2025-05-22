@@ -1,5 +1,5 @@
 //challenge 1:sum of positives
-/*function sumOfPositives(arr){
+function sumOfPositives(arr){
     let sum =0;
     for (let i = 0; i < arr.length; i++){
         if (arr[i] > 0){
@@ -9,12 +9,12 @@
     return sum;
 }
 
-console.log(sumOfPositives([1, -4, 7, 12]))//20 */
+//console.log(sumOfPositives([1, -4, 7, 12]))//20 
 
 
 // challenge 2:Find Maximum Value
 
-/*function findMax(arr){
+function findMax(arr){
     let max=arr[0] ;
     for (let i=0; i < arr.length; i++){
         if (arr[i] > max){
@@ -25,11 +25,11 @@ console.log(sumOfPositives([1, -4, 7, 12]))//20 */
 
 
 }
-console.log(findMax([1, 4, 7, 12]))//12 */
+//console.log(findMax([1, 4, 7, 12]))//12 
 
 
 // challenge 3: Election winner
- /*function findWinner(arr){
+ function findWinner(arr){
 
     let winner = arr[0];
     for ( let i=0; i < arr.length; i++){
@@ -39,16 +39,16 @@ console.log(findMax([1, 4, 7, 12]))//12 */
     }
     return winner;
  }
- console.log (findWinner([
+ /*console.log (findWinner([
     { name: "Alice", votes: 50 },
     { name: "Bob", votes: 75 },
     { name: "Charlie", votes: 65 }
-  ]))//{ name: "Bob", votes: 75 }
-  */
+  ]))//{ name: "Bob", votes: 75 } */
+  
 
   //challenge 4: Longest word
 
-  /*function findLongestWord(arr){
+  function findLongestWord(arr){
     let longest =arr[0]
     for (let i=0;i<arr.length;i++){
       if(longest.length<arr[i].length){
@@ -58,32 +58,32 @@ console.log(findMax([1, 4, 7, 12]))//12 */
     return longest
   }
 
-  console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]))//grapefruit
-  */
+  //console.log(findLongestWord(["apple", "banana", "pear", "grapefruit"]))//grapefruit
+  
  
  
   //challenge 5:Count Properties
 
-/*function countProperties(obj){
+function countProperties(obj){
  let count= Object.keys(obj).length
  return count
 }
-console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }))//3*/
+//console.log(countProperties({ name: "Alice", age: 25, city: "Paris" }))//3
 
 
 //challenge6 :Filter by Length
 
-/*function filterByLength(arr,minLength){
+function filterByLength(arr,minLength){
  let items =arr.filter(i => i.length>=minLength)
 return items
 }
 
-console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5))// returns: ["giraffe", "hippo", "elephant"]
-*/
+//console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5))// returns: ["giraffe", "hippo", "elephant"]
+
 
 
 //challenge 7:Sum of Even Numbers
-/*function sumEvenNumbers(arr){
+function sumEvenNumbers(arr){
     let sum =0;
   for (let i=0; i<arr.length ;i++) {
     if(arr[i]%2===0){
@@ -93,12 +93,12 @@ console.log(filterByLength(["cat", "giraffe", "hippo", "dog", "elephant"], 5))//
  return sum
 }
 
-console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]))// returns: 12 */
+//console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]))// returns: 12 
 
 
 //challenge 8:Difference Between Sum of Even and Odd Numbers
 
-/*function differenceEvenOdd(arr){
+function differenceEvenOdd(arr){
     let evenArray =arr.filter( i => i%2===0)
     let oddArray =arr.filter( i => i%2!==0)
     let sumEven=0
@@ -113,7 +113,7 @@ console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]))// returns: 12 */
 return  sumEven-sumOdd
 
 }
- console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]))//3 */
+ //console.log(differenceEvenOdd([1, 2, 3, 4, 5, 6]))//3 
 
 
  //challenge 9 Count Truthy 
@@ -127,13 +127,13 @@ function countTruthy( obj){
       }
      return sum
     }
-    console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))//2
+    //console.log(countTruthy({ a: 0, b: "hello", c: false, d: 42, e: null }))//2
 
 
 
 //challenge 10 :Average of Numbers
 
-/*function average(arr){
+function average(arr){
 let sum =0
 for(let i=0;i<arr.length;i++){
     sum+=arr[i]
@@ -146,14 +146,14 @@ return sum/arr.length
   
 }
   
-console.log(average([2, 4, 6, 8])) // returns: 5
-console.log(average([])) // returns: 0 */
+//console.log(average([2, 4, 6, 8])) // returns: 5
+//console.log(average([])) // returns: 0 */
 
 
 
 //challenge 11 Linear Search
 
-/*function linearSearch(arr,val){
+function linearSearch(arr,val){
    //return arr.indexOf(val)
    let firstindex=-1;
     for (let i=0;i<arr.length && firstindex==-1;i++){
@@ -165,13 +165,13 @@ console.log(average([])) // returns: 0 */
    return firstindex
 }
  
-console.log(linearSearch([5, 3, 7, 1,7, 4], 7) ) // returns: 2
-console.log (linearSearch([5, 3, 7, 1, 4], 10) )// returns: -1) */
+//console.log(linearSearch([5, 3, 7, 1,7, 4], 7) ) // returns: 2
+//console.log (linearSearch([5, 3, 7, 1, 4], 10) )// returns: -1) */
 
 
 //challenge 12 :reverse linear search
 
-/*function reverseLinearSearch(arr,val){
+function reverseLinearSearch(arr,val){
     //return arr.lastindexOf(val)
     let lastindex=-1;
      for (let i=0;i<arr.length;i++){
@@ -183,13 +183,13 @@ console.log (linearSearch([5, 3, 7, 1, 4], 10) )// returns: -1) */
     return lastindex
  }
 
- console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7) ) // returns: 5 */
+ //console.log(reverseLinearSearch([5, 3, 7, 1, 4, 7], 7) ) // returns: 5 */
 
 
 
  //challenge 13 : linear search  all indices
 
- /*function linearSearchAll(arr,val){
+ function linearSearchAll(arr,val){
    
     let allIndices=[];
      for (let i=0;i<arr.length;i++){
@@ -201,13 +201,24 @@ console.log (linearSearch([5, 3, 7, 1, 4], 10) )// returns: -1) */
     return allIndices
  }
 
- console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7) ) // returns: [2,5]*/
+ //console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7) ) // returns: [2,5]*/
 
 
  
  // challenge 14:Count Occurrences
 
- //function countOccurrences(arr){
+ function countOccurrences(arr){
+  let occurrences = {};
+  arr.forEach((element) => {
+    if (element in occurrences) {
+      occurrences[element] += 1;
+      return;
+    }
 
+    occurrences[element] = 1;
+  });
+  return occurrences
 
- //}
+ }
+
+ //console.log(countOccurrences(["apple", "banana", "apple", "orange", "banana", "apple"]))// returns: { apple: 3, banana: 2, orange: 1 }
