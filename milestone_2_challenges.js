@@ -235,3 +235,29 @@ function reverseLinearSearch(arr,val){
     return uniqueArray;
 }
 //console.log(removeDuplicates([1, 2, 3, 2, 1, 4]))// returns: [1, 2, 3, 4]
+
+
+//challenge 16 : Most Frequent
+
+function mostFrequent(arr){
+    let occurrences = {};
+    arr.forEach((element) => {
+        if (element in occurrences) {
+            occurrences[element] += 1;
+            return;
+        }
+
+        occurrences[element] = 1;
+    });
+    let maxCount = 0;
+    let mostFrequentElement = null;
+
+    for (let element in occurrences) {
+        if (occurrences[element] > maxCount) {
+            maxCount = occurrences[element];
+            mostFrequentElement = element;
+        }
+    }
+    return mostFrequentElement;
+}
+//console.log(mostFrequent([1, 2, 3, 2, 1, 4]))// returns: 1
