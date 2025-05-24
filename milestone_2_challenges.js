@@ -197,8 +197,7 @@ function reverseLinearSearch(arr,val){
      }
     return allIndices
  }
-
- //console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7) ) // returns: [2,5]*/
+//console.log(linearSearchAll([5, 3, 7, 1, 4, 7], 7) ) // returns: [2,5]*/
 
 
  
