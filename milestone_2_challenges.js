@@ -8,7 +8,6 @@ function sumOfPositives(arr){
     }
     return sum;
 }
-
 //console.log(sumOfPositives([1, -4, 7, 12]))//20 
 
 
@@ -22,8 +21,6 @@ function findMax(arr){
         }
     }
     return max;
-
-
 }
 //console.log(findMax([1, 4, 7, 12]))//12 
 
